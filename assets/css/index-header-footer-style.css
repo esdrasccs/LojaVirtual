@@ -11,6 +11,7 @@ html, body{
     font-family:monospace;
 }
 
+
 .navbar{
     height: 64px;
 }
@@ -18,6 +19,7 @@ html, body{
 .navbar-brand{
     margin-left: 90px;
 }
+
 
 .shop-car{
     width: 140px;
@@ -138,24 +140,85 @@ html, body{
     transition: .3s;
 }
 
-@media (max-width:700px){
+@media (max-width:670px){
+    .header-itens,
+    #header{
+        
+        padding: 0px;
+        padding: 5px;
+    }
+    .header-search{
+        width: 300px;
+    }
+
+    .header-itens .itens{
+        max-width: 500px;
+        margin-left: 0px;
+        padding: 0px;
+        justify-content: center;
+        align-content: center;
+    }
+
+
+    .navbar-brand,
+    .navbar-brand i{
+        width: 50px;
+        margin: 5px;
+        padding: 0px;
+    }
+}
+
+@media (max-width:600px){
     .header-itens,
     #header{
         height: 120px;
-
+        padding: 0px;
+        padding: 5px;
+    }
+    .header-search{
+        width: 300px;
     }
 
-    .header-itens{
-        flex-wrap: inherit;
+    .header-itens .itens{
+        max-width: 300px;
+        margin-left: 0px;
+        padding: 0px;
+        justify-content: space-between;
     }
-    .shop-car,
+
+
     .navbar-brand,
-    .navbar-toggler {
-        align-self: flex-start;
-        margin-top: 10px;
+    .navbar-brand i{
+        width: 50px;
+        margin: 5px;
+        padding: 0px;
+    }
+}
+
+@media (max-width:500px){
+    .header-itens,
+    #header{
+        height: 120px;
+        padding: 0px;
+        padding: 5px;
+    }
+    .header-search{
+        width: 200px;
     }
     
-    .header-search{
-        
+
+    .header-itens .itens{
+        max-width: 400px;
+        align-self: flex-start;
+        margin: 0px;
+        padding: 0px;
+    }
+
+
+    .navbar-brand,
+    .navbar-brand i{
+        width: 50px;
+        margin: 5px;
+        padding: 0px;
     }
 }
